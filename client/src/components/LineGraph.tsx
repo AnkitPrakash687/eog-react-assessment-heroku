@@ -48,6 +48,7 @@ export default ({ metricName }: LineGraphProps) => {
     });
     return (
       <LineChart
+        syncId={1}
         width={500}
         height={350}
         data={metrics.slice(dataLength * -1)}
