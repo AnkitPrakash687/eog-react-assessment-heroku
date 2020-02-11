@@ -5,12 +5,12 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.42",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
     "@types/react-redux": "^7.1.5",
     "@types/recharts": "^1.8.5",
     "graphql": "^14.5.8",
-    "graphql-tag": "^2.10.3",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
