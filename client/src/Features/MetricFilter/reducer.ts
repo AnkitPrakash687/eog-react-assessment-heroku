@@ -25,22 +25,8 @@ const filterSlice = createSlice({
   name: 'filter',
   initialState: initialState,
   reducers: {
-    addFilter: (state, action: PayloadAction<MetricFilter>) => {
-      const { selectedFilter } = action.payload;
-      if(selectedFilter !== ''){
-      state.filters.push(selectedFilter);
-      }
-    },
-    removeFilter: (state, action: PayloadAction<MetricFilter>) => {
-      const { selectedFilter } = action.payload;
-      state.filters = state.filters.filter(filter => {
-        if (filter !== selectedFilter) return true;
-        return false;
-      });
-    },
-
-    clearAll: (state) => {
-      state.filters = [''];
+    setFilter: (state, action: PayloadAction<{filters:string[]}>) => {
+        state.filters = action.payload.filters
     },
     filterApiErrorReceived: (state, action: PayloadAction<ApiErrorAction>) => state,
   },
