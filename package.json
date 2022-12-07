@@ -9,7 +9,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "description": "[Template for a Project Charter](https://profcase.github.io/project-charter-template) document used to formalize project understanding.",
   "main": "codeword.js",
